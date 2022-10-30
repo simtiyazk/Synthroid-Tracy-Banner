@@ -1,0 +1,312 @@
+$banner-width: 160px;
+$banner-height: 600px;
+@import "../../../styles/main";
+
+#wrapper {
+  transition: 0.3s;
+  border: 1px solid #000000;
+
+  .absolute-position {
+    position: absolute;
+  }
+
+  // main banner styles
+  #main-panel {
+    background-color: #f7f4f3;
+    height: $banner-height;
+    width: $banner-width;
+
+    #main-exit {
+      width: $banner-width;
+      height: 297px;
+      z-index: 10;
+    }
+
+    #bg {
+      top: -76px;
+      left: -6px;
+      transform: scale(1.1);
+    }
+
+    #bg02 {
+      top: 2px;
+      left: 0;
+      opacity: 0;
+    }
+
+    #bio {
+      width: 122px;
+      height: auto;
+      bottom: 310px;
+      left: 18px;
+      // clip: rect(0px, 214px, 39px, 214px)
+    }
+
+    #circle {
+      top: 23px;
+      left: -48px;
+    }
+
+    #smallCircle {
+      width: 203px;
+      height: 224px;
+      top: -125px;
+      left: -23px;
+    }
+
+    #topMark {
+      width: 37px;
+      height: auto;
+      top: 16px;
+      left: 4px;
+    }
+
+    #bottomMark {
+      width: 37px;
+      height: auto;
+      top: 249px;
+      left: 116px;
+    }
+
+    #txt01 {
+      width: 138px;
+      height: auto;
+      top: 59px;
+      left: 10px;
+      opacity: 0;
+    }
+
+    #txt02 {
+      width: 140px;
+      height: auto;
+      top: 16px;
+      left: 10px;
+      opacity: 0;
+    }
+
+    #cta {
+      width: 141px;
+      height: auto;
+      top: 252px;
+      left: 9px;
+    }
+  }
+
+  // Pi
+  #pi-panel {
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    left: 0;
+    top: 297px;
+    background-color: #ffffff;
+    display: block;
+    text-align: left;
+
+    #logo {
+      width: 150px;
+      height: auto;
+      top: 5px;
+      left: 4px;
+    }
+
+    .pi {
+      width: 113px;
+      height: auto;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    a{
+      top: 42px;
+      left: 4px;
+      position: absolute;
+      height: 24px;
+    }
+  }
+}
+
+// ISI styles
+.isi-main {
+  width: 100%;
+  height: 234px;
+  background-color: #fff;
+  left: 0px;
+  top: 365px;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -o-transition: all 300ms;
+  transition: all 300ms;
+  z-index: 0;
+
+  * {
+    pointer-events: all;
+  }
+}
+
+.iframePreview {
+  transition: 0.3s;
+}
+
+.isi_wrapper {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  display: block;
+  z-index: 3000;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.iScrollVerticalScrollbar {
+  background-color: #f68c6a;
+  top: 3px !important;
+  right: 7px !important;
+  height: 30% !important;
+  width: 3px !important;
+  position: absolute;
+  z-index: 9999;
+  overflow: visible !important;
+  border-radius: 25px;
+}
+
+.iScrollIndicator {
+  width: 3px !important;
+  height: 6px !important;
+  margin-top: 0;
+  right: 0 !important;
+  position: absolute;
+  background: #4d4d4d;
+  cursor: pointer;
+  display: block !important;
+  border-radius: 25px;
+}
+
+.isi {
+  background-color: #fff;
+  width: 90%;
+  padding: 3px 0 2px 4px;
+
+  h2 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    color: #ffffff;
+    background-color: #f68c6a;
+    padding: 2px 8px;
+    margin: 0 0 10px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    color: #f68c6a;
+    margin: 0 0 3px;
+  }
+
+  sup {
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    font-size: 7px;
+    top: -3px;
+  }
+
+  p {
+    font-size: 11px;
+    font-family: Helvetica, sans-serif;
+    color: #425563;
+    margin: 0 0 8px 0;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .no-bottom {
+    margin-bottom: 0;
+  }
+
+  .mid-bottom {
+    margin-bottom: 16px;
+  }
+
+  .no-underline {
+    text-decoration: none;
+  }
+
+  ul {
+    width: 170px;
+    top: 0px;
+    left: -30px;
+    margin: 2px 0 12px;
+    list-style: none;
+
+    li {
+      font-size: 11px;
+      font-family: Helvetica, sans-serif;
+      line-height: 12px;
+      color: #565656;
+      padding-bottom: 5px;
+    }
+  }
+
+  ul li::before {
+    content: "•";
+    color: #425563;
+    font-weight: bold;
+    display: inline-block;
+    top: 3px;
+    width: 1em;
+    font-size: 18px;
+    padding-left: 8px;
+    margin-left: -1em;
+  }
+
+  .footer {
+    position: relative;
+
+    p {
+      font-size: 11px;
+    }
+  }
+
+  .urlIsi {
+    color: #f68c6a;
+    font-size: 11px;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    word-break: break-word;
+    text-decoration: underline;
+
+    &.no-underline {
+      text-decoration: none;
+
+      &:hover {
+        cursor: auto;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+// Extend style for ISI clone
+#isi-clone {
+  @extend .isi;
+
+  &.uat {
+    left: 400px;
+    top: 0;
+
+    .legal-section {
+      height: auto;
+      width: 318px;
+    }
+  }
+}
